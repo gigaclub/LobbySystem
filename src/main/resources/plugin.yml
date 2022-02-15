@@ -1,0 +1,9 @@
+name: LobbySystem
+version: @version@
+main: net.gigaclub.lobbysystem.Main
+api-version: 1.18
+prefix: LobbySystem
+authors: [ Kevin ]
+description: A basic Lobby System
+depend: [PlaceholderAPI]
+website: https://github.com/GigaClub
