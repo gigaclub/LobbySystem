@@ -2,6 +2,7 @@ package net.gigaclub.lobbysystem;
 
 import net.gigaclub.lobbysystem.commands.WarpCommand;
 import net.gigaclub.lobbysystem.events.BlockBreakingEvent;
+import net.gigaclub.lobbysystem.events.BlockPlacingEvent;
 import net.gigaclub.lobbysystem.events.EntitySpawnEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -31,6 +32,7 @@ public final class Main extends JavaPlugin {
 
     private void registerEvents() {
         getServer().getPluginManager().registerEvents(new BlockBreakingEvent(), this);
+        getServer().getPluginManager().registerEvents(new BlockPlacingEvent(), this);
         getServer().getPluginManager().registerEvents(new EntitySpawnEvent(), this);
     }
 
